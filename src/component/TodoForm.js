@@ -15,7 +15,7 @@ const TodoFormContainer = styled.form`
 
   button {
     padding: 8px;
-    background-color: #4caf50;
+    background-color: #77a0e9;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -26,6 +26,7 @@ const TodoFormContainer = styled.form`
 const TodoForm = ({ onAdd }) => {
   const textRef = useRef("");
   const [text, setText] = useState("");
+
   const changeInput = (e) => {
     const { value } = e.target;
     setText(value);

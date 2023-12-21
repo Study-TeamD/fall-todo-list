@@ -36,7 +36,8 @@ const TodoItemContainer = styled.li`
 `;
 
 const TodoItem = ({ item, onToggle, onDel }) => {
-  const { id, text, check } = item;
+  const { id, check } = item;
+  const text = item.title;
 
   return (
     <TodoItemContainer className={check ? "on" : ""}>
